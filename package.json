@@ -2,6 +2,7 @@
   "name": "ts-monorepo",
   "private": true,
   "scripts": {
+    "postinstall": "npx lerna bootstrap",
     "lint": "npx eslint . --ext .ts,.tsx --max-warnings=0",
     "lint:fix": "npm run lint -- --fix",
     "start": "npx lerna run start --scope=app --stream",
