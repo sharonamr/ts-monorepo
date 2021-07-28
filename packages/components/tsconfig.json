@@ -1,22 +1,10 @@
-
 {
-  "extends": "../../base.tsconfig.json",
+  "extends": "../../base.tsconfig",
   "include": [
     "src",
   ],
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@ts-monorepo/data/*": [
-        "../data/src/*"
-      ]
-    },
-    "target": "es6",
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx"
+    "composite": true, // the composite flag
   },
+  "references": [{ "path": "../data/tsconfig.json" }]
 }
