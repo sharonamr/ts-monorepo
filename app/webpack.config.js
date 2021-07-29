@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+ 
 module.exports = {
   entry: './src/index.ts',
   module: {
@@ -14,9 +16,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
-    alias: {
-      "@ts-monorepo/components": "@ts-monorepo/components/src",
-    }
   },
   output: {
     filename: 'bundle.js',

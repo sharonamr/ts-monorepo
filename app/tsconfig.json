@@ -4,19 +4,7 @@
     "src",
   ],
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@ts-monorepo/components/*": [
-        "../packages/components/src/*"
-      ]
-    },
-    "outDir": "./build/",
-    "target": "es6",
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx"
-  }
+    "outDir": "./dist",
+  },
+  "references": [{ "path": "../packages/components/tsconfig.json" }]
 }
