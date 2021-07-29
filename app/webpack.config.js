@@ -16,9 +16,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
-    alias: {
-      '@ts-monorepo/components': '@ts-monorepo/components/src',
-    }
   },
   output: {
     filename: 'bundle.js',
