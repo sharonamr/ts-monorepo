@@ -1,13 +1,9 @@
-import { FC } from 'react';
 import { render } from 'react-dom';
-import { HashRouter as Router } from 'react-router-dom';
-import { Header } from '@ts-monorepo/components';
-
-export const App: FC = () => (<div>ts-monorepo<Header /></div>)
+import { Root } from './Root';
 
 
 const renderApp = () => {
-  render(<Router><App /></Router>,
+  render(<Root />,
     document.getElementById('root'),
   );
 };
