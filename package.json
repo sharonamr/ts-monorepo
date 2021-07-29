@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "postinstall": "npx lerna bootstrap",
-    "lint": "npx eslint . --ext .ts,.tsx --max-warnings=0",
-    "lint:fix": "npm run lint -- --fix",
+    "lint": "npx lerna run lint --stream",
+    "lint:fix": "npx lerna run lint:fix --stream",
     "start": "npx lerna run start --scope=app --stream",
     "build": "npx lerna run build --scope=app --stream"
   },
